@@ -1,0 +1,290 @@
+/* Initial requiremnts to avoid browser default margin and padding */
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@400;500&family=Playfair+Display:ital,wght@1,500&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Oswald', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+/* Navigation bar setup */
+
+img[alt='logo-1'] {
+    height: 40px;
+
+}
+
+
+
+header {
+    position: sticky;
+    top: 0px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 5px;
+
+    background-color: white;
+    width: 100vw;
+}
+
+.navigationBar {
+    display: flex;
+    width: 100vw;
+    height: 80px;
+    flex-wrap: wrap;
+
+
+}
+
+.search {
+    width: 15vw;
+    height: 20px;
+    padding: 0px 5px;
+}
+
+ul li {
+    list-style: none;
+    padding: 0px 10px;
+}
+
+ul li:hover {
+    color: rgb(31, 32, 134);
+    cursor: pointer;
+}
+
+
+.nav-right:hover {
+    color: blue;
+    cursor: pointer;
+}
+ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.navItem-left {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.navItem-right {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-right {
+    margin: 0px 10px;
+}
+
+
+
+.rightNavbar {
+    margin-left: 20px;
+}
+
+.navItem-right {
+    position: absolute;
+    right: 30px;
+    top: 20px;
+}
+
+
+.homeImg {
+    width: 80vw;
+    height: 80vh;
+    margin: 12px 0px;
+}
+
+/* iframe tag used to popup video into webpages  */
+
+.iframeTag {
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.iframeTag1 {
+    margin-top: 10px;
+}
+
+.imgBelowIrameTag {
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.imgBelowIrameTag1 {
+    margin-top: 20px;
+}
+
+
+
+.para-fLex1 {
+    display: flex;
+    justify-content: center;
+    margin: 30px 1px;
+}
+
+.itemImages {
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+
+/* Responsiveness for all the devices using media queries */
+
+@media only screen and (max-width: 1024px) {
+    img[alt='homeImg'] {
+        width: 900px;
+    }
+
+}
+
+@media only screen and (max-width: 912px) {
+
+    img[alt='homeImg'] {
+        width: 800px;
+    }
+
+    .iframeTag1 {
+        width: 600px;
+    }
+
+    img[alt="homeImg-1"] {
+        width: 200px;
+    }
+
+
+}
+
+@media only screen and (max-width: 724px) {
+    .navItem-right {
+        margin-left: 10px;
+    }
+
+    img[alt='homeImg'] {
+        width: 650px;
+    }
+
+    .iframeTag1 {
+        width: 650px;
+    }
+
+    img[alt="homeImg-1"] {
+        width: 220px;
+        height: 400px;
+    }
+
+
+
+
+}
+
+@media only screen and (max-width: 540px) {
+    .navigationBar {
+        height: 130px;
+
+
+    }
+
+    .navItem-right {
+        margin-top: 45px;
+    }
+
+    img[alt='homeImg'] {
+        width: 250px;
+    }
+
+    .iframeTag1 {
+        width: 250px;
+    }
+
+    img[alt="homeImg-1"] {
+        width: 200px;
+    }
+}
+
+
+
+
+@media only screen and (max-width: 414px) {
+    .navigationBar {
+        height: 130px;
+
+    }
+
+    .navItem-right {
+        margin-top: 30px;
+    }
+
+    img[alt='homeImg'] {
+        width: 350px;
+    }
+
+    .iframeTag1 {
+        width: 300px;
+    }
+
+    img[alt="homeImg-1"] {
+        width: 200px;
+    }
+}
+
+@media only screen and (max-width: 393px) {
+    .navItem-right {
+        margin-top: 35px;
+    }
+
+    .navigationBar {
+        height: 130px;
+    }
+
+    img[alt='homeImg'] {
+        width: 350px;
+    }
+
+    .iframeTag1 {
+        width: 300px;
+    }
+
+    img[alt="homeImg-1"] {
+        width: 200px;
+    }
+}
+
+@media only screen and (max-width: 280px) {
+    .navItem-right {
+        margin-top: 35px;
+    }
+
+    .navigationBar {
+        height: 130px;
+    }
+
+    img[alt='homeImg'] {
+        width: 200px;
+    }
+
+    .iframeTag1 {
+        width: 200px;
+    }
+
+    img[alt="homeImg-1"] {
+        width: 100px;
+    }
+}
