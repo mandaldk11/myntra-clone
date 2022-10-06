@@ -12,28 +12,56 @@
 </head>
 
 <body>
-    <!-- Header component -->
-    <header>
-        <nav class="navigationBar">
-            <ul class="navItem-left">
-                <img src="myntra-logo.jpg" alt='logo-1' srcset="">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="Men.html"> Men</a></li>
-                <li><a href="Women.html"> Women</a></li>
-                <li><a href="Kids.html">Kids</a></li>
-                <li><a href="Living.html">Home and Living</a></li>
-                <li><a href="Beauty.html">Beauty</a></li>
-            </ul>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-light fixed-top">
+        <div class="container-fluid">
 
-            <div class="navItem-right">
-                <input placeholder="Search for products & brands" class="search">
-                <div class="nav-right">Profile</div>
-                <div class="nav-right">Wishlist</div>
-                <div class="nav-right">Bag</div>
-                <img height="35" src="kart.jpg" alt="myntra">
+            <img src="myntra-logo.jpg" alt='logo-1' srcset="">
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active mx-4" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active mx-4" href="Men.html">Mens</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active mx-4" href="Women.html">Womens</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active mx-4" href="Kids.html">Kids</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active mx-4" href="Living.html">Home and Living</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active mx-4" href="Beauty.html">Beauty</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active mx-4" href="profile.html">Profile</a>
+                    </li>
+
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2 mx-2" type="search" placeholder="Search for products "
+                            aria-label="Search">
+                      
+                    </form>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="Beauty.html">Cart</a>
+                    </li>
+                    <img height="35" src="kart.jpg" alt="myntra">
+
+                </ul>
+              
             </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
     <!-- Main body start here -->
 
     <!-- first cards start -->
